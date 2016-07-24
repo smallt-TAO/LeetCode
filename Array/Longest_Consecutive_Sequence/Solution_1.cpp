@@ -5,7 +5,7 @@ public:
     int longestConsecutive(vector<int>& nums) {
         unordered_map<int,bool> mp;
         int ret = 0;
-        for(const auto x:nums)
+        for(const auto x : nums)
             mp[x] = true;
         for(const auto x : mp)
             if(x.second)
