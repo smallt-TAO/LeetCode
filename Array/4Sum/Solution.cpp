@@ -3,32 +3,32 @@
 class Solution {
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
-        vector<vector<int>> result;
-        if (nums.size() < 4) return result;
+        vector<vector<int>> total;
+        int n = nums.size();
+        if (n < 4)  return total;
         sort(nums.begin(), nums.end());
-        
-        unordered_map<int, vector<pair<int, int>>> cache;
-        for (size_t a = 0; a < nums.size(); ++a) {
-            for (size_t b = a + 1; b < nums.size(); ++b) {
-                cache[nums[a] + nums[b]].push_back(pair<int, int>(a, b));
-            }
-        }
-        
-        for (int c = 0; c < nums.size(); ++c) {
-            for (size_t d = c + 1; d < nums.size(); ++d) {
-                const int key = target - nums[c] - nums[d];
-                if (cache.find(key) == cache.end()) continue;
-                
-                const auto& vec = cache[key];
-                for (size_t k = 0; k < vec.size(); ++k) {
-                    if (c <= vec[k].second) continue;
-                    
-                    result.push_back({nums[vec[k].first], nums[vec[k].second], nums[c], nums[d]});
+        for (int i = 0; i < n - 3; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            if (nums[i] + nums[i + 1] + nums[i + 2] + nums[i + 3] > target) break;
+            if (nums[i] + nums[n - 3] + nums[n - 2] + nums[n - 1] < target) continue;
+            for (int j = i+1; j < n - 2; j++) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) continue;
+                if (nums[i] + nums[j] + nums[j + 1] + nums[j + 2] > target) break;
+                if (nums[i] + nums[j] + nums[n - 2] + nums[n - 1] < target) continue;
+                int left = j + 1;
+                int right = n - 1;
+                while (left < right) {
+                    int sum = nums[left] + nums[right] + nums[i] + nums[j];
+                    if (sum < target) left++;
+                    else if (sum > target) right--;
+                    else {
+                        total.push_back(vector<int>{nums[i], nums[j], nums[left], nums[right]});
+                        do {left++;} while (nums[left] == nums[left - 1] && left < right);
+                        do {right--;} while (nums[right] == nums[right + 1] && left < right);
+                    }
                 }
             }
         }
-        sort(result.begin(), result.end());
-        result.erase(unique(result.begin(), result.end()), result.end());
-        return result;
+        return total;
     }
 };
