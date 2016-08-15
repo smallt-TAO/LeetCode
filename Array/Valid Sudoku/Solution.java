@@ -1,4 +1,6 @@
-int[][] used1 = new int[9][9];
+public class Solution {
+    public boolean isValidSudoku(char[][] board) {
+        int[][] used1 = new int[9][9];
         int[][] used2 = new int[9][9];
         int[][] used3 = new int[9][9];
         for (int i = 0; i < 9; i++)
@@ -18,3 +20,5 @@ int[][] used1 = new int[9][9];
                     used1[i][num] = used2[j][num] = used3[k][num] = 1;
                 }   
         return true;
+    }
+}
