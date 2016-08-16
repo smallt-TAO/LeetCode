@@ -1,5 +1,5 @@
-/ LeetCode, Plus One
-//Time complexity O(n)
+// LeetCode, Plus One
+// Time complexity O(n)
 class Solution {
 public:
     vector<int> plusOne(vector<int>& digits) {
