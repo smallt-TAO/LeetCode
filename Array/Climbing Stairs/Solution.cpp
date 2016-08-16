@@ -1,5 +1,5 @@
-/ LeetCode, Climbing Stairs
-//Time complexity O(n)
+// LeetCode, Climbing Stairs
+// Time complexity O(n)
 class Solution {
 public:
     int climbStairs(int n) {
