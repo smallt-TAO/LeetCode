@@ -3,14 +3,6 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-
-class Solution(object):
-    def reverseKGroup(self, head, k):
-        """
-        :type head: ListNode
-        :type k: int
-        :rtype: ListNode
-        """
 class Solution(object):
     def reverseKGroup(self, head, k):
         """
@@ -35,7 +27,6 @@ class Solution(object):
                 continue
             p = p.next
             n -= 1
-
         return dummy.next
 
     def reverseList(self, head, k):
@@ -57,6 +48,3 @@ class Solution(object):
         newTail.next = n
 
         return
-    
-        
-
