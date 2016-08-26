@@ -2,8 +2,7 @@
 Just for the answer of LeetCode
 
 # Time 06/23/2016
-Finished the first question of the LeetCode Online Judge --- two Sum
-By the use of the Java, Python,C++ language.
+Finished the first question of the LeetCode Online Judge --- two Sum By the use of the Java, Python,C++ language.
 keep calm and keep CODE ON.
 
 # Time 08/08/2016
@@ -18,3 +17,8 @@ I have to say, different betwen with head->next = tail and head = tail->next.
 Clever use the few pointer to finish the hard job.
 What I want to point the LRU Cache.
 GOOD JOB
+
+# Time 08/26/2016
+In the model of string, encounter a lot of problems. 
+What make me restless is the clever code I can't understand.
+It makes me so depressed。
