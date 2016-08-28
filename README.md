@@ -21,4 +21,8 @@ GOOD JOB
 # Time 08/26/2016
 In the model of string, encounter a lot of problems. 
 What make me restless is the clever code I can't understand.
-It makes me so depressed。
+It makes me so depressed.
+
+# Time 08/28/2016
+The use of the stack is so flexible that it will complicate the problem with simple methods.
+To some extent, even with the use of the HashMap.
