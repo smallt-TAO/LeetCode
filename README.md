@@ -26,3 +26,6 @@ It makes me so depressed.
 # Time 08/28/2016
 The use of the stack is so flexible that it will complicate the problem with simple methods.
 To some extent, even with the use of the HashMap.
+
+# Time 09/16/2016
+Finish the Binary Sort.
