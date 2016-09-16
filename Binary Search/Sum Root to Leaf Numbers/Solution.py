@@ -16,9 +16,9 @@ class Solution(object):
         q = [(root,root.val)]
         sum = 0
         while q:
-            node,num = q.pop(0)
+            node, num = q.pop(0)
             if [node.left, node.right] == [None, None]:
-                s += num
+                sum += num
             else:
                 for child in [node.left, node.right]:
                     if child != None:
