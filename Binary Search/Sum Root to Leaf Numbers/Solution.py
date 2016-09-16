@@ -13,7 +13,7 @@ class Solution(object):
         """
         if root == None:
             return 0
-        q = [(root,root.val)]
+        q = [(root, root.val)]
         sum = 0
         while q:
             node, num = q.pop(0)
