@@ -29,3 +29,6 @@ To some extent, even with the use of the HashMap.
 
 # Time 09/16/2016
 Finish the Binary Sort.
+
+# Time 09/18/2016
+Finish the Sort.
