@@ -11,7 +11,7 @@ public class Solution {
     }
     
     public static void dfs(int candidates[], int k, int target, List<Integer> list,List<List<Integer>> res) {
-		if (target < 0 || k >= candidates.length) return;
+	if (target < 0 || k >= candidates.length) return;
         if (0 == target) {
             res.add(new ArrayList<>(list));
             return;
