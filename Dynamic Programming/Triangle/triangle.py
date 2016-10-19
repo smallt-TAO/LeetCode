@@ -1,6 +1,3 @@
-__author__ = 'Smalltao'
-
-
 class Solution:
     """ @param triangle, a list of lists of integers."""
 
